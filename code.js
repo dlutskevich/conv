@@ -1,26 +1,111 @@
 const quest1 = (prompt('В какие единицы перевести?(bit, bait, kbit, kbait)'))
 const quest2 = parseInt(prompt('Ваше число?(в битах)'));
 
-if (quest1 === 'bit') {
-  alert(`Это ${quest2} бит`)
+function converter(quest1, quest2) {
+  if (quest1 === 'bit') {
+    return `Это ${quest2 / 1} бит`
+  }
+  if (quest1 === 'bait') {
+    return `Это ${quest2 / 8} байт`
+  }
+  if (quest1 === 'kbit') {
+    return `Это ${quest2 / 1024} килобит`
+  }
+  if (quest1 === 'kbait') {
+    return `Это ${quest2 / 8192} килобайт`
+  }
 }
-if (quest1 === 'bait') {
-  alert(`Это ${quest2 / 8} байт`)
-}
-if (quest1 === 'kbit') {
-  alert(`Это ${quest2 / 1024} килобит`)
-}
-if (quest1 === 'kbait') {
-  alert(`Это ${quest2 / 8192} килобайт`)
-}
+
+let result = converter(quest1, quest2)
+alert(result)
 
 
 
 
 
 
-// switch () {
-//   case quest1: (alert(`Это ${quest2} бит`))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// switch (quest1) {
+//   case 'bit': {
+//     alert(`Это ${quest2} бит`)
+//   }
+//     break
+//   case 'bait': {
+//     alert(`Это ${quest2 / 8} байт`)
+//   }
+//     break
+//   case 'kbit': {
+//     alert(`Это ${quest2 / 1024} килобит`)
+//   }
+//     break
+//   case 'kbait': {
+//     alert(`Это ${quest2 / 8192} килобайт`)
+//   }
+//     break
+//   default: {
+//     alert('Такое значение не завезли!')
+//   }
+// }
+
+
+// switch (quest1) {
+//   case 'bit': {
+//     alert(`Это ${quest2} бит`)
+//   }
+//     break
+//   case 'bait': {
+//     alert(`Это ${quest2 / 8} байт`)
+//   }
+//     break
+//   case 'kbit': {
+//     alert(`Это ${quest2 / 1024} килобит`)
+//   }
+//     break
+//   case 'kbait': {
+//     alert(`Это ${quest2 / 8192} килобайт`)
+//   }
+//     break
+//   default: {
+//     alert('Такое значение не завезли!')
+//   }
+// }
+
+// if (quest1 === 'bit') {
+//   alert(`Это ${quest2} бит`)
+// }
+// if (quest1 === 'bait') {
+//   alert(`Это ${quest2 / 8} байт`)
+// }
+// if (quest1 === 'kbit') {
+//   alert(`Это ${quest2 / 1024} килобит`)
+// }
+// if (quest1 === 'kbait') {
+//   alert(`Это ${quest2 / 8192} килобайт`)
+// }
+
+
+
+
+
 
 // }
 
